@@ -25,9 +25,9 @@ export const constantRoutes = [
     redirect: '/dashboard',
     children: [{
       path: 'dashboard',
-      name: 'Dashboard',
+      name: 'dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      meta: { title: '首页', icon: 'dashboard' }
     }]
   },
   {
@@ -40,16 +40,19 @@ export const constantRoutes = [
       {
         path: 'banner',
         name: 'banner',
+        component: () => import(/* webpackChunkName: "content" */ '@/views/content'), 
         meta: { title: 'banner' }
       },
       {
         path: 'notice',
         name: 'notice',
+        component: () => import(/* webpackChunkName: "content" */ '@/views/content'), 
         meta: { title: '通知公告' }
       },
       {
         path: 'news',
         name: 'news',
+        component: () => import(/* webpackChunkName: "content" */ '@/views/content'), 
         meta: { title: '新区资讯' }
       }
     ]
@@ -64,16 +67,19 @@ export const constantRoutes = [
       {
         path: 'news',
         name: 'news',
+        component: () => import(/* webpackChunkName: "menu" */ '@/views/menu'), 
         meta: { title: '政策资讯' }
       },
       {
         path: 'credential',
         name: 'credential',
+        component: () => import(/* webpackChunkName: "menu" */ '@/views/menu'), 
         meta: { title: '证件办理' }
       },
       {
         path: 'life',
         name: 'life',
+        component: () => import(/* webpackChunkName: "menu" */ '@/views/menu'), 
         meta: { title: '生活服务' }
       }
     ]
@@ -88,11 +94,13 @@ export const constantRoutes = [
       {
         path: 'member',
         name: 'member',
+        component: () => import(/* webpackChunkName: "authority" */ '@/views/authority/member'),
         meta: { title: '成员管理' }
       },
       {
         path: 'notice',
         name: 'notice',
+        component: () => import(/* webpackChunkName: "authority" */ '@/views/authority/explain'),
         meta: { title: '权限说明' }
       }
     ]

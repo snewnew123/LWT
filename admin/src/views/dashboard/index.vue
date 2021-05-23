@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name:</div>
+    <div class="dashboard-text">老外通后台</div>
   </div>
 </template>
 

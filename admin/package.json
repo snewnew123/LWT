@@ -1,8 +1,8 @@
 {
-  "name": "vue-admin-template",
-  "version": "4.4.0",
-  "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "name": "LWT",
+  "version": "1.0.0",
+  "description": "LWT",
+  "author": "ghy",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:prod": "vue-cli-service build",
@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "0.18.1",
     "core-js": "3.6.5",
-    "element-ui": "2.13.2",
+    "element-ui": "2.15.1",
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
@@ -54,6 +54,25 @@
     "> 1%",
     "last 2 versions"
   ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "indent": [
+        0,
+        2
+      ]
+    }
+  },
   "engines": {
     "node": ">=8.9",
     "npm": ">= 3.0.0"
